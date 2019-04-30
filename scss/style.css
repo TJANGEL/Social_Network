@@ -57,10 +57,48 @@
   margin-right: 0.5rem;
   outline: none;
   border-radius: 2px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .btn.btn-primary {
   background: #17a2b8;
+  color: #fff;
+}
+
+.btn.btn-primary:hover {
+  background: #1fc8e3;
+}
+
+.btn.btn-dark {
+  background: #343a40;
+  color: #fff;
+}
+
+.btn.btn-dark:hover {
+  background: #3f474e;
+}
+
+.btn.btn-success {
+  background: #28a745;
+  color: #fff;
+}
+
+.btn.btn-success:hover {
+  background: #2dbc4e;
+}
+
+.btn.btn-danger {
+  background: #dc3545;
+  color: #333;
+}
+
+.btn.btn-danger:hover {
+  background: #e04b59;
+}
+
+.btn:hover {
+  background: #626d78;
   color: #fff;
 }
 
