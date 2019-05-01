@@ -1,4 +1,4 @@
-// container
+// Container
 .container {
   max-width: $max-width;
   margin: auto;
@@ -8,7 +8,7 @@
   margin-bottom: 3rem;
 }
 
-// text styles
+// Text Styles
 .x-large {
   font-size: 4rem;
   line-height: 1.2;
@@ -40,7 +40,7 @@
   margin: 1.5rem 0;
 }
 
-// backgrounds
+// Backgrounds
 .bg {
   &-primary {
     @include set-background($primary-color);
@@ -60,10 +60,11 @@
   }
   &-white {
     @include set-background(#fff);
+    border: #ccc 1px solid;
   }
 }
 
-// buttons
+// Buttons
 .btn {
   display: inline-block;
   background: $light-color;
@@ -74,52 +75,45 @@
   font-size: 1rem;
   margin-right: 0.5rem;
   outline: none;
-  border-radius: 2px;
   transition: all 0.2s ease-in;
 
   &.btn-primary {
     @include set-background($primary-color);
-
     &:hover {
-      background: lighten($primary-color, 10%);
+      background: lighten($primary-color, 5%);
     }
   }
   &.btn-dark {
     @include set-background($dark-color);
-
     &:hover {
       background: lighten($dark-color, 5%);
     }
   }
   &.btn-success {
     @include set-background($success-color);
-
     &:hover {
       background: lighten($success-color, 5%);
     }
   }
   &.btn-danger {
     @include set-background($danger-color);
-
     &:hover {
       background: lighten($danger-color, 5%);
     }
   }
-
   &:hover {
     background: lighten($dark-color, 20%);
     color: #fff;
   }
 }
 
-// alerts
+// Alerts
 .alert {
   padding: 0.8rem;
   margin: 1rem;
   opacity: 0.9;
   background: $light-color;
   color: #333;
-  border-radius: 2px;
 
   &.alert-primary {
     @include set-background($primary-color);
@@ -135,7 +129,7 @@
   }
 }
 
-// badges
+// Badges
 .badge {
   font-size: 0.8rem;
   padding: 0.1rem;
@@ -164,7 +158,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .table {

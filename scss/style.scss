@@ -12,7 +12,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background: #fff;
+  background-color: #fff;
   color: #333;
 }
 
@@ -29,7 +29,7 @@ img {
   width: 100%;
 }
 
-// nav
+// Navbar
 .navbar {
   display: flex;
   align-items: center;
@@ -41,25 +41,26 @@ img {
   top: 0;
   border-bottom: solid 1px $primary-color;
   opacity: 0.9;
-}
 
-ul {
-  display: flex;
-}
+  ul {
+    display: flex;
+  }
 
-a {
-  padding: 0.45rem;
-  margin: 0 0.25rem;
+  a {
+    color: #fff;
+    padding: 0.45rem;
+    margin: 0 0.25rem;
 
-  &:hover {
-    color: $primary-color;
+    &:hover {
+      color: $primary-color;
+    }
   }
 }
 
-// landing
+// Landing
 .landing {
   position: relative;
-  background: url(../dist/img/coding.jpg) no-repeat center center/cover;
+  background: url('../img/showcase.jpg') no-repeat center center/cover;
   height: 100vh;
 
   &-inner {
@@ -75,7 +76,7 @@ a {
   }
 }
 
-// profiles page
+// Profiles Page
 .profile {
   display: grid;
   grid-template-columns: 2fr 4fr 2fr;
@@ -86,14 +87,10 @@ a {
   margin-bottom: 1rem;
 }
 
-// profile page
+// Profile Page
 .profile-grid {
   display: grid;
-  grid-template-areas:
-    'top top'
-    'about about'
-    'exp edu'
-    'github github';
+  grid-template-areas: 'top top' 'about about' 'exp edu' 'github github';
   grid-gap: 1rem;
 
   .profile-top {
@@ -117,6 +114,7 @@ a {
       }
     }
   }
+
   .profile-about {
     grid-area: about;
     text-align: center;
@@ -128,9 +126,11 @@ a {
       text-align: center;
     }
   }
+
   .profile-exp {
     grid-area: exp;
   }
+
   .profile-edu {
     grid-area: edu;
   }
@@ -138,9 +138,9 @@ a {
   .profile-exp,
   .profile-edu {
     & > div {
-      &.profile-edu {
-        grid-area: edu;
-      }
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: #ccc 1px dotted;
     }
 
     &:last-child {
@@ -171,7 +171,7 @@ a {
   }
 }
 
-// posts
+// Posts Page
 .post-form-header {
   padding: 0.5rem;
 }
